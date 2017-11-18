@@ -8,8 +8,7 @@ RUN apk add --no-cache --virtual .build-deps \
         musl-dev \
         linux-headers \
     && pip install mypy \
-    && apk del --purge .build-deps \
-    && rm -rf ~/.cache
+    && apk del --purge .build-deps
 
 RUN apk add --no-cache git
 
